@@ -1,5 +1,5 @@
 name: 'PR TypeScript Checker'
-description: 'Type-checks only changed TypeScript files in a PR using the TypeScript compiler API'
+description: 'Fast TypeScript type-checking for PRs — checks only changed files using the TS compiler API, posts inline annotations, skips full project rebuild'
 author: 'rohitkhadatkar18'
 
 inputs:
@@ -29,5 +29,5 @@ runs:
   main: 'dist/index.js'
 
 branding:
-  icon: 'check-circle'
+  icon: 'check-square'
   color: 'blue'
