@@ -15,5 +15,14 @@
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@vercel/ncc": "^0.38.1"
-  }
+  },
+  "keywords": [
+    "github-actions",
+    "typescript",
+    "ci",
+    "type-checking",
+    "pull-request",
+    "developer-tools",
+    "devops"
+  ]
 }
