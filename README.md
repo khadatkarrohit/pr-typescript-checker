@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - uses: khadatkarrohit/pr-typescript-checker@v1
+      - uses: your-org/pr-typescript-checker@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 ```
