@@ -1,0 +1,33 @@
+name: 'PR TypeScript Checker'
+description: 'Type-checks only changed TypeScript files in a PR using the TypeScript compiler API'
+author: 'rohitkhadatkar18'
+
+inputs:
+  github-token:
+    description: 'GitHub token for API access and posting annotations'
+    required: true
+    default: ${{ github.token }}
+  tsconfig:
+    description: 'Path to tsconfig.json'
+    required: false
+    default: 'tsconfig.json'
+  fail-on-error:
+    description: 'Fail the workflow if type errors are found'
+    required: false
+    default: 'true'
+  ignore-paths:
+    description: 'Comma-separated glob patterns of files to ignore'
+    required: false
+    default: 'node_modules/**,dist/**,build/**'
+  working-directory:
+    description: 'Working directory containing the TypeScript project'
+    required: false
+    default: '.'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'check-circle'
+  color: 'blue'
